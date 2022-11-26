@@ -6,6 +6,10 @@
   "scripts": {
     "test": "node cli.js -n 35.92 -w 79.05 -z America/New_York"
   },
+  "bin": {
+    "galosh.js": "./cli.js"
+  },
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/comp426-2022-fall/a02-mayather.git"
@@ -15,5 +19,10 @@
   "bugs": {
     "url": "https://github.com/comp426-2022-fall/a02-mayather/issues"
   },
-  "homepage": "https://github.com/comp426-2022-fall/a02-mayather#readme"
+  "homepage": "https://github.com/comp426-2022-fall/a02-mayather#readme",
+  "dependencies": {
+    "minimist": "^1.2.7",
+    "moment-timezone": "^0.5.39",
+    "node-fetch": "^3.3.0"
+  }
 }
